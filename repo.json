@@ -3,7 +3,7 @@
     "Author": "SheepGoMeh",
     "Name": "CrowdFix",
     "InternalName": "CrowdFix",
-    "AssemblyVersion": "0.1.2.0",
+    "AssemblyVersion": "0.1.3.0",
     "Description": "Cuts per-frame engine overhead that causes stutter and low FPS, most noticeable in crowded areas.\nSkips idle GPU resource notifiers, chains job worker wake-ups, drops repeated skeleton pose syncs, trims the culling visibility clear and shortens the graphics allocator lock.\nEach fix can be toggled via /crowdfix",
     "ApplicableVersion": "any",
     "Tags": [
@@ -21,10 +21,10 @@
     "Punchline": "Smoother frame times by cutting engine overhead.",
     "AcceptsFeedback": true,
     "RepoUrl": "https://github.com/SheepGoMeh/CrowdFix",
-    "DownloadLinkInstall": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.2.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.2.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.2.0/latest.zip",
-    "LastUpdate": 1791301221
+    "DownloadLinkInstall": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.3.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.3.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.3.0/latest.zip",
+    "LastUpdate": 1791316267
   },
   {
     "Author": "SheepGoMeh",
