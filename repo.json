@@ -1,0 +1,56 @@
+[
+  {
+    "Author": "SheepGoMeh",
+    "Name": "CrowdFix",
+    "InternalName": "CrowdFix",
+    "AssemblyVersion": "0.1.2.0",
+    "Description": "Cuts per-frame engine overhead that causes stutter and low FPS, most noticeable in crowded areas.\nSkips idle GPU resource notifiers, chains job worker wake-ups, drops repeated skeleton pose syncs, trims the culling visibility clear and shortens the graphics allocator lock.\nEach fix can be toggled via /crowdfix",
+    "ApplicableVersion": "any",
+    "Tags": [
+      "Performance",
+      "FPS",
+      "Stutter",
+      "Crowd"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/SheepGoMeh/CrowdFix/main/images/icon.png",
+    "Punchline": "Smoother frame times by cutting engine overhead.",
+    "AcceptsFeedback": true,
+    "RepoUrl": "https://github.com/SheepGoMeh/CrowdFix",
+    "DownloadLinkInstall": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.2.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.2.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.2.0/latest.zip",
+    "LastUpdate": 1791301221
+  },
+  {
+    "Author": "SheepGoMeh",
+    "Name": "UpscaleBuddy",
+    "InternalName": "UpscaleBuddy",
+    "AssemblyVersion": "0.1.0.0",
+    "Description": "Runs AMD FSR 3.1 temporal upscaling and anti-aliasing through the game's own DLSS path, on any GPU.\nSupports the FSR quality presets and Native AA.\nOpen the settings with /upscalebuddy",
+    "ApplicableVersion": "any",
+    "Tags": [
+      "Graphics",
+      "Upscaling",
+      "FSR",
+      "Anti-aliasing"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/SheepGoMeh/UpscaleBuddy/main/images/icon.png",
+    "Punchline": "FSR 3.1 upscaling and anti-aliasing on any GPU.",
+    "AcceptsFeedback": true,
+    "RepoUrl": "https://github.com/SheepGoMeh/UpscaleBuddy",
+    "DownloadLinkInstall": "https://github.com/SheepGoMeh/UpscaleBuddy/releases/download/v0.1.0.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/SheepGoMeh/UpscaleBuddy/releases/download/v0.1.0.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/SheepGoMeh/UpscaleBuddy/releases/download/v0.1.0.0/latest.zip",
+    "LastUpdate": 1791314388
+  }
+]
