@@ -30,7 +30,7 @@
     "Author": "SheepGoMeh",
     "Name": "UpscaleBuddy",
     "InternalName": "UpscaleBuddy",
-    "AssemblyVersion": "0.1.1.0",
+    "AssemblyVersion": "0.1.2.0",
     "Description": "Runs AMD FSR 3.1 temporal upscaling and anti-aliasing through the game's own DLSS path, on any GPU.\nSupports the FSR quality presets and Native AA.\nOpen the settings with /upscalebuddy",
     "ApplicableVersion": "any",
     "Tags": [
@@ -48,9 +48,9 @@
     "Punchline": "FSR 3.1 upscaling and anti-aliasing on any GPU.",
     "AcceptsFeedback": true,
     "RepoUrl": "https://github.com/SheepGoMeh/UpscaleBuddy",
-    "DownloadLinkInstall": "https://github.com/SheepGoMeh/UpscaleBuddy/releases/download/v0.1.1.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/SheepGoMeh/UpscaleBuddy/releases/download/v0.1.1.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/SheepGoMeh/UpscaleBuddy/releases/download/v0.1.1.0/latest.zip",
-    "LastUpdate": 1791319956
+    "DownloadLinkInstall": "https://github.com/SheepGoMeh/UpscaleBuddy/releases/download/v0.1.2.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/SheepGoMeh/UpscaleBuddy/releases/download/v0.1.2.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/SheepGoMeh/UpscaleBuddy/releases/download/v0.1.2.0/latest.zip",
+    "LastUpdate": 1791323224
   }
 ]
