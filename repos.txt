@@ -1,2 +1,3 @@
 SheepGoMeh/CrowdFix
 SheepGoMeh/UpscaleBuddy
+SheepGoMeh/BlurBuddy
