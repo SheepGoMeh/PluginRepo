@@ -82,6 +82,32 @@
     "LastUpdate": 1793105017
   },
   {
+    "Author": "SheepGoMeh",
+    "Name": "SoundBringers",
+    "InternalName": "SoundBringers",
+    "AssemblyVersion": "0.1.1.0",
+    "Description": "Sends a second mix of the game's audio, with its own volume for each sound type, to another output device, so your stream can hear what you don't. Needs a virtual audio cable driver such as VB-Cable, installed separately.\nOpen the settings with /soundbringers",
+    "ApplicableVersion": "any",
+    "Tags": [
+      "Streaming",
+      "Audio",
+      "OBS"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/SheepGoMeh/SoundBringers/main/images/icon.png",
+    "Punchline": "A second game audio mix for your stream.",
+    "AcceptsFeedback": true,
+    "RepoUrl": "https://github.com/SheepGoMeh/SoundBringers",
+    "DownloadLinkInstall": "https://github.com/SheepGoMeh/SoundBringers/releases/download/v0.1.1.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/SheepGoMeh/SoundBringers/releases/download/v0.1.1.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/SheepGoMeh/SoundBringers/releases/download/v0.1.1.0/latest.zip",
+    "LastUpdate": 1793220209
+  },
+  {
     "Author": "Raine Aeternal",
     "Name": "Ukeire",
     "InternalName": "Ukeire",
