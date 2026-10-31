@@ -3,9 +3,10 @@
     "Author": "SheepGoMeh",
     "Name": "CrowdFix",
     "InternalName": "CrowdFix",
-    "AssemblyVersion": "0.1.6.0",
-    "Description": "Cuts per-frame engine overhead that causes stutter and low FPS, most noticeable in crowded areas.\nSkips idle GPU resource notifiers, chains job worker wake-ups, drops repeated skeleton pose syncs, trims the culling visibility clear and shortens the graphics allocator lock.\nEach fix can be toggled via /crowdfix",
+    "AssemblyVersion": "0.1.7.0",
+    "Description": "Cuts per-frame engine overhead that causes stutter and low FPS, most noticeable in crowded areas.\nSpreads culling, skeleton animation and job joins across worker threads, and cuts waits, wake-ups, syscalls and lock contention in the job system and graphics allocator.\nSkips work nothing uses: idle GPU resource notifiers, repeated pose syncs, hidden minions' follow AI and hidden hotbar slots.\nAdds frame pacing modes for the 1/2 and 1/4 refresh rate limits on VRR and fixed refresh displays.\nEach fix can be toggled via /crowdfix\nIcon made with AI tools.",
     "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/SheepGoMeh/CrowdFix",
     "Tags": [
       "Performance",
       "FPS",
@@ -17,14 +18,12 @@
     "LoadSync": false,
     "CanUnloadAsync": false,
     "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/SheepGoMeh/CrowdFix/main/images/icon.png",
     "Punchline": "Smoother frame times by cutting engine overhead.",
     "AcceptsFeedback": true,
-    "RepoUrl": "https://github.com/SheepGoMeh/CrowdFix",
-    "DownloadLinkInstall": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.6.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.6.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.6.0/latest.zip",
-    "LastUpdate": 1791539935
+    "DownloadLinkInstall": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.7.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.7.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/SheepGoMeh/CrowdFix/releases/download/v0.1.7.0/latest.zip",
+    "LastUpdate": 1793449490
   },
   {
     "Author": "SheepGoMeh",
