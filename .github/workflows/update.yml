@@ -14,11 +14,34 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Fails the run (and skips the commit) if any tracked repo lacks a repo.json release asset.
+      # Fails the run (and skips the commit) if any tracked repo lacks a repo.json asset on its latest release.
+      # When the newest prerelease has a higher AssemblyVersion, its version, API level and download link become the
+      # Testing fields of the stable entry.
       - name: Build repo.json
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           for repo in $(grep -v '^#' repos.txt); do
-            curl -sSfL "https://github.com/$repo/releases/latest/download/repo.json" || exit 1
+            stable=$(curl -sSfL "https://github.com/$repo/releases/latest/download/repo.json") || exit 1
+
+            tag=$(curl -sSfL -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$repo/releases?per_page=20" |
+              jq -r '[.[] | select(.prerelease and (.draft | not))][0].tag_name // empty')
+            testing='[]'
+            if [ -n "$tag" ]; then
+              testing=$(curl -sSfL "https://github.com/$repo/releases/download/$tag/repo.json") || testing='[]'
+            fi
+
+            echo "$stable" | jq --argjson testing "$testing" '
+              def ver: split(".") | map(tonumber);
+              map(. as $s
+                | ($testing | map(select(.InternalName == $s.InternalName)) | first) as $t
+                | if $t != null and ($t.AssemblyVersion | ver) > ($s.AssemblyVersion | ver)
+                  then $s + {
+                    TestingAssemblyVersion: $t.AssemblyVersion,
+                    TestingDalamudApiLevel: $t.DalamudApiLevel,
+                    DownloadLinkTesting: $t.DownloadLinkInstall
+                  }
+                  else $s end)'
           done | jq -s 'add' > repo.json
 
       - name: Commit if changed
