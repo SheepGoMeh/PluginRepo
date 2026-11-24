@@ -20,6 +20,8 @@ jobs:
       - name: Build repo.json
         env:
           GH_TOKEN: ${{ github.token }}
+        # Explicit bash = -eo pipefail, so a failed fetch fails the step instead of piping empty input into jq (-> null).
+        shell: bash
         run: |
           for repo in $(grep -v '^#' repos.txt); do
             stable=$(curl -sSfL "https://github.com/$repo/releases/latest/download/repo.json") || exit 1
